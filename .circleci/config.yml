@@ -22,9 +22,6 @@ jobs:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
           paths:
             - "venv"
-
-      - setup_remote_docker
-
       - run:
           name: Install Docker client
           command: |
