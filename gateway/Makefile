@@ -8,7 +8,7 @@ run-wheel-builder:
 		nameko-example-builder;
 
 build-image:
-	docker build -t nameko/nameko-example-gateway:$(TAG) -f docker.run .;
+	docker build -t davarski/nameko-example-gateway:$(TAG) -f docker.run .;
 
 push-image:
-	docker push nameko/nameko-example-gateway:$(TAG)
+	docker push davarski/nameko-example-gateway:$(TAG)
