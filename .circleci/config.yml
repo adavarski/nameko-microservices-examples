@@ -14,7 +14,6 @@ jobs:
             . venv/bin/activate
             pip install -U pip wheel setuptools
             pip install -U orders/[dev] products/[dev] gateway/[dev]
-            pip install -e .[classic_control]
 
       - run:
           name: Install Docker client
