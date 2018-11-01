@@ -34,7 +34,7 @@ jobs:
          name: Build Docker image
          command: TAG=latest make nameko-example-builder
          
-       - run: 
+      - run: 
          name: Build Docker image order
          command: |
            cd /root/project/orders
