@@ -25,6 +25,10 @@ jobs:
             mv /tmp/docker/* /usr/bin
       
       - setup_remote_docker
+      
+      - run:
+         name: Docker login
+         command: make docker-login
 
       - run:
          name: Build Docker image
