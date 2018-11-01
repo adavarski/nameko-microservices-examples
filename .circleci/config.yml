@@ -38,6 +38,7 @@ jobs:
          name: Build Docker image order
          command: |
            cd /root/project/orders
+           make build-image
            make push-image
 
 
