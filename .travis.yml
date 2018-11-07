@@ -5,5 +5,5 @@ env:
   
 script:
 # the only line for building the image
-- TAG=latest docker push-images
+- TAG=latest make push-images
 
