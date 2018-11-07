@@ -1,0 +1,9 @@
+sudo: true
+dist: trusty
+env:
+  # $CI_ENV_REGISTRY_USER, $CI_ENV_REGISTRY_PASS should be set beforehand
+  
+script:
+# the only line for building the image
+- TAG=latest docker push-images
+
